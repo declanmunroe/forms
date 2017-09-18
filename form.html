@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin-bottom: 3%;
+         }
+         
+         textarea
+         {
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin-bottom: 3%;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+        <fieldset>
+            <legend> Registration </legend>
+            <label class = "field" for="fname"> * First Name:</label>  
+            <input type="text" name="fname" required="" placeholder="Enter your Name here"/>
+            
+            <label class = "field" for="password"> Password:</label>
+            <input id="password" name="password" type="password" placeholder="Enter your Password here" />
+            
+            <label class = "field" for="email"> * Email:</label>
+            <input id="email" name="email"  type="email" required="" autofocus placeholder="Enter your Email here"/>
+            
+            <label class = "field" for="number"> Mobile:</label>
+            <input id="number" name="number"  type="tel" pattern="08+[0-9]{1}[0-9]{7}" placeholder="Enter your Phonenumber here"/>
+            
+            <label class = "field" for="textarea"> Textarea:</label>
+            <textarea placeholder="Enter details" rows = "4" cols = "26"></textarea>
+            <br>
+            
+            <label class = "field" for="website"> Website:</label>
+            <input name="website"  type="url" placeholder="Enter your Website here"/>
+            
+            <label class = "field" for="submit"> Submit:</label>
+            <input type="submit" value="submit"/>
+        </fieldset>
+    </div>
+   </body>
+
+</html>
